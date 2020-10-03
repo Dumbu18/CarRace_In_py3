@@ -1,9 +1,7 @@
 import pygame as pg
 import time
 import random
-
 pg.init()
-
 crash_sound = pg.mixer.Sound("Crash_Sounds.wav")
 pg.mixer.music.load("Pagani_zonda.wav")
 
@@ -33,8 +31,6 @@ def car(x,y):
 def text_object(text, font):
     textSurface = font.render(text, True, black)
     return textSurface ,textSurface.get_rect()
-
-
 
 def message_display(text):
     beauty_text = pg.font.Font('freesansbold.ttf',115)
